@@ -1,5 +1,6 @@
 package web.service;
 
+import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.ModelMap;
 import web.dao.Dao;
@@ -7,7 +8,8 @@ import web.model.Car;
 
 import java.util.List;
 
-@org.springframework.stereotype.Service
+//@org.springframework.stereotype.Service
+@Service
 public class ServiceImp implements Service {
 
     @Autowired
