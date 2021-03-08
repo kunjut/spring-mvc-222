@@ -6,7 +6,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import web.model.Car;
-import web.service.ServiceImp;
+import web.service.CarServiceImp;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +15,7 @@ import java.util.List;
 public class CarsController {
 
     @Autowired
-    ServiceImp serviceImp;
+    CarServiceImp serviceImp;
 
     @GetMapping(value = "/cars")
     public String printCars(@RequestParam(value = "count", required = false) Integer count,

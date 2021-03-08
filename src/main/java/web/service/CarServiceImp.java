@@ -8,9 +8,8 @@ import web.model.Car;
 
 import java.util.List;
 
-//@org.springframework.stereotype.Service
 @Service
-public class ServiceImp implements Service {
+public class CarServiceImp implements CarService {
 
     @Autowired
     Dao dao;

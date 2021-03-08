@@ -5,6 +5,6 @@ import web.model.Car;
 
 import java.util.List;
 
-public interface Service {
+public interface CarService {
     List<Car> getCars(ModelMap model);
 }
