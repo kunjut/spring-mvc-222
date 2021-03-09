@@ -15,7 +15,7 @@ import java.util.List;
 public class CarsController {
 
     @Autowired
-    CarServiceImp serviceImp;
+    private CarServiceImp serviceImp;
 
     @GetMapping(value = "/cars")
     public String printCars(@RequestParam(value = "count", required = false) Integer count,
